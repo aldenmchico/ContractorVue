@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Alden OAuth 2.0</title>
+    
+</head>
+
+<body>
+    <h1>Create an Auth0 ContractorVue Account</h1>
+    <form action="/create" method="post">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value=""><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+    <p>
+        Email must be unique for account creation. Password must have the following requirements:
+        <li>8 characters in length</li>
+        <li>Contain at lest one lower case (a-z), one upper case (A-Z), and one number (0-9)</li>
+        <li>Contain at least one special character (!@#$%^&*)</li>
+    </p>
+    <p>
+        Clicking the "Submit" button will create a ContractorVue account and generate an ID token 
+        that allows you to access your ContractorVue data.
+    </p>
+    <p>
+        Already have an account? Sign in <a href="./login.html">here</a>.
+    </p>
+</body>
+
+</html>
